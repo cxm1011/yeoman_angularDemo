@@ -4,8 +4,8 @@ var rev = require('gulp-rev');
 
 gulp.task('js',function () {
   return gulp.src(config.app)
-    .pipe(rev())
+    //.pipe(rev())
     .pipe(gulp.dest(config.dest))
-    .pipe(rev.manifest())
-    .pipe(gulp.dest(config.rev));
+   // .pipe(rev.manifest())
+    //.pipe(gulp.dest(config.rev));
 });
